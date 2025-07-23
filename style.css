@@ -1,0 +1,159 @@
+/* common styles */
+
+/* font-styles */
+
+.noto-serif-fast {
+    font-family: "Noto Serif", serif;
+
+}
+
+.noto-sans-second {
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* colors styles */
+.reddish-orange {
+    color: rgba(233, 90, 8, 1);
+}
+
+.opacity-color {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* body common styles */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0px;
+}
+
+/* nav styles */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav-item ul li {
+    list-style: none;
+    gap: 48px;
+
+
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+#home {
+    font-size: 16px;
+    color: bold;
+}
+
+/* banner styles */
+.banner-section {
+    display: flex;
+    margin-top: 120px;
+    align-items: last baseline;
+
+}
+
+.orange {
+    color: rgba(233, 90, 8, 1);
+}
+
+.banner-tital h1 {
+    font-size: 65px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.banner-tital p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+/* plants section */
+
+.plants-section {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.plants-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 16px;
+
+}
+
+.flower-price {
+    width: 270px;
+    height: 450px;
+    border: 1px solid red;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.flower-name {
+    font-size: 22px;
+    color: #111111;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.flower-price button {
+    width: 270px;
+    height: 50px;
+    padding: 19px 80px;
+    border-style: none;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #ffffff;
+    background-color: rgba(233, 90, 8, 1);
+    margin-top: 30px;
+}
+
+.flowers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 20px;
+}
+
+.Store {
+    display: flex;
+    margin-top: 210px;
+    gap: 60px;
+
+}
+
+.Plants-Lover h1 {
+    font-size: 52px;
+    font-weight: bold;
+    color: black;
+}
+
+.Plants-Lover ul li {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 200px;
+    color: rgba(0, 0, 0, 0.5);
+
+}
