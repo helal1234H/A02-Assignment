@@ -31,36 +31,36 @@
 }
 
 /* nav styles */
-
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav-item ul {
+.nav-list ul {
     display: flex;
-    align-items: center;
     gap: 48px;
 }
 
-.nav-item ul li {
+.nav-list ul li {
     list-style: none;
-    gap: 48px;
-
-
 }
 
-.nav-item ul li a {
+.nav-list ul li a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
+    color: #111111;
 
 }
 
-#home {
-    font-size: 16px;
-    color: bold;
+.nav-item {
+    display: flex;
+    gap: 48px;
 }
+
+.h {
+    color: #111111;
+}
+
 
 /* banner styles */
 .banner-section {
@@ -75,9 +75,9 @@
 }
 
 .banner-tital h1 {
-    font-size: 65px;
+    font-size: 5em;
     font-weight: bold;
-    margin: 0px;
+
 }
 
 .banner-tital p {
@@ -155,5 +155,149 @@
     font-size: 22px;
     font-weight: 200px;
     color: rgba(0, 0, 0, 0.5);
+
+}
+
+/* Deals section */
+.Deals h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.Deals p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    font-weight: 200px;
+    text-align: center;
+}
+
+.Deals {
+    text-align: center;
+    margin-top: 130px;
+}
+
+/* offer section */
+.offer-1 {
+    background-image: url(./assets/deal-bloom.png);
+
+    height: 200px;
+    background-repeat: no-repeat;
+
+
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 14px;
+}
+
+
+.offer-2 {
+    background-image: url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.jobo-plant {
+    background-image: url(./assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 22px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jobo-plant p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.jobo-plant span {
+    font-size: 28px;
+    text-decoration: underline white;
+}
+
+.offers {
+    display: flex;
+    gap: 28px;
+    color: #ffffff;
+    margin-top: 120px;
+
+}
+
+.offer-deals p {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.offer-deals span {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline white;
+}
+
+
+/* responsive for mobile */
+@media (max-width:576px) {
+    .container {}
+
+    .nav-list {
+        display: none;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-section img {
+        width: 100%;
+    }
+
+    .flowers-container {
+
+        grid-template-columns: repeat(2, 0fr);
+        gap: 20px;
+
+    }
+
+    .flower-price img p button {
+        width: 100%;
+
+    }
+
+    .Store {
+        flex-direction: column;
+    }
+
+    .bach img {
+        width: 100%;
+    }
+
+    .Deals p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .offers {
+        flex-direction: column;
+        width: 361px;
+        height: 180px;
+
+    }
+
+
 
 }
