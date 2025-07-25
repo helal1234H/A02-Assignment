@@ -75,7 +75,7 @@
 }
 
 .banner-tital h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bold;
 
 }
@@ -90,12 +90,16 @@
 /* plants section */
 .plants-section {
     text-align: center;
+    margin-top: 120px;
 }
 
 .card {
     border: 2px solid red;
     text-align: center;
+    margin-top: 50px;
 }
+
+
 
 .card p {
     font-size: 22px;
