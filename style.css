@@ -88,50 +88,31 @@
 }
 
 /* plants section */
-
 .plants-section {
     text-align: center;
-    margin-top: 120px;
 }
 
-.plants-section h1 {
-    font-size: 50px;
-    font-weight: bold;
-    margin: 16px;
-
-}
-
-.flower-price {
-    width: 270px;
-    height: 450px;
-    border: 1px solid red;
-    margin-top: 30px;
+.card {
+    border: 2px solid red;
     text-align: center;
 }
 
-.flower-name {
-    font-size: 22px;
-    color: #111111;
-}
-
-.price {
+.card p {
     font-size: 22px;
     font-weight: bold;
+
 }
 
-.flower-price button {
+.card button {
     width: 270px;
-    height: 50px;
-    padding: 19px 80px;
-    border-style: none;
-    font-size: 16px;
-    font-weight: 400px;
-    color: #ffffff;
+    min-height: 50px;
     background-color: rgba(233, 90, 8, 1);
-    margin-top: 30px;
+    color: #ffffff;
+
+    border-style: none;
 }
 
-.flowers-container {
+.flower-card {
     display: grid;
     grid-template-columns: repeat(4, 0fr);
     gap: 20px;
@@ -139,23 +120,17 @@
 
 .Store {
     display: flex;
-    margin-top: 210px;
+    margin-top: 120px;
     gap: 60px;
-
-}
-
-.Plants-Lover h1 {
-    font-size: 52px;
-    font-weight: bold;
-    color: black;
+    align-items: center;
 }
 
 .Plants-Lover ul li {
-    margin-top: 20px;
-    font-size: 22px;
-    font-weight: 200px;
     color: rgba(0, 0, 0, 0.5);
+}
 
+.Plants-Lover {
+    width: 540px;
 }
 
 /* Deals section */
@@ -178,80 +153,159 @@
 
 /* offer section */
 .offer-1 {
-    background-image: url(./assets/deal-bloom.png);
-
-    height: 200px;
+    background-image: url(./assets/deal-ana.png);
     background-repeat: no-repeat;
-
-
-    width: 350px;
+    height: 200px;
+    border: 1px solid red;
+    width: 370px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: #ffffff;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 20px;
+    font-size: 22px;
 }
 
 
 .offer-2 {
-    background-image: url(./assets/deal-ana.png);
+    background-image: url(./assets/deal-bloom.png);
     background-repeat: no-repeat;
-
     height: 200px;
-    margin-top: 20px;
+    width: 370px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: #ffffff;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 20px;
+    margin-top: 24px;
+    font-size: 22px;
 }
 
-.jobo-plant {
+.offer-3 {
     background-image: url(./assets/deal-zabo.png);
     background-repeat: no-repeat;
     height: 400px;
-    border-radius: 22px;
-    width: 750px;
+    border: 1px solid aqua;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: #ffffff;
     text-align: center;
-}
-
-.jobo-plant p {
-    font-size: 40px;
+    border-radius: 28px;
+    font-size: 50px;
     font-weight: bold;
+
 }
 
-.jobo-plant span {
-    font-size: 28px;
-    text-decoration: underline white;
-}
 
 .offers {
     display: flex;
     gap: 28px;
-    color: #ffffff;
-    margin-top: 120px;
 
 }
 
-.offer-deals p {
-    font-size: 20px;
+/* contract section */
+.contract {
+    background-image: url(./assets/news-letter-bg.png);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 115px;
+    text-align: center;
+
+
+}
+
+.contract h1 {
+    font-size: 50px;
     font-weight: bold;
+    color: #ffffff;
 
 }
 
-.offer-deals span {
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: underline white;
+.contract input {
+    width: 644px;
+    height: 48px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    border-style: none;
+
+
 }
+
+.input-button- {
+    display: flex;
+
+
+}
+
+.contract button {
+    width: 180px;
+    height: 50px;
+    border-style: none;
+    background-color: rgba(233, 90, 8, 1)
+}
+
+/* footer section */
+.footer-item {
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.footer-list li {
+    list-style: none;
+    margin-top: 32px;
+
+
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.feature p {
+    margin-top: 32px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.social-media-logo ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.social-media-logo ul li {
+    list-style: none;
+}
+
+.footer-logo p {
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+
 
 
 /* responsive for mobile */
 @media (max-width:576px) {
-    .container {}
+    .container {
+        max-width: 360px;
+        margin: 0px 20px;
+
+    }
+
+    body {
+        overflow: ;
+    }
 
     .nav-list {
         display: none;
@@ -276,28 +330,83 @@
     .flower-price img p button {
         width: 100%;
 
+
     }
 
     .Store {
         flex-direction: column;
+
     }
 
     .bach img {
         width: 100%;
-    }
 
-    .Deals p {
-        font-size: 20px;
-        padding: 10px;
     }
 
     .offers {
         flex-direction: column;
+    }
+
+    .offer-1,
+    .offer-2,
+    .offer-3 {
         width: 361px;
-        height: 180px;
+        height: 184px;
 
     }
 
+    .offer-3 {
+        font-size: 22px;
+
+    }
+
+    .contract {
+        background-image: url(./assets/news-letter-bg.png);
+        height: 275px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 390px;
 
 
+    }
+
+    .contract input {
+        width: 200px;
+        height: 48px;
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.5);
+        display: block;
+        border-style: none;
+    }
+
+    .contract button {
+        width: 90px;
+        height: 50px;
+        border-style: none;
+        background-color: rgba(233, 90, 8, 1)
+    }
+
+    .contract h1 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+
+
+    }
+
+    .footer-item {
+        flex-direction: column;
+        gap: 10px;
+
+
+    }
+
+    .footer-contract {
+        margin-left: 0px;
+    }
+
+    .flower-card {
+        grid-template-columns: repeat(2, 0fr);
+    }
 }
